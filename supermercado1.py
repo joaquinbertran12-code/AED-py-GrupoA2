@@ -27,8 +27,10 @@ def solicitar_float(mensaje):
             else:
                 print("Error: debe ingresar un valor mayor que cero.")
         except ValueError:
-            print("Error: ingrese un número válido.") 
-            def cargar_productos():
+            print("Error: ingrese un número válido.")
+
+
+def cargar_productos():
     productos = []
 
     cantidad = solicitar_entero(
@@ -92,7 +94,9 @@ def registrar_productos(productos):
             productos_vendidos[nombre] += producto["cantidad"]
         else:
             productos_vendidos[nombre] = producto["cantidad"]
-            def imprimir_ticket(productos, total,
+
+
+def imprimir_ticket(productos, total,
                      descuento, total_final):
 
     print("\n========================")
@@ -184,3 +188,4 @@ while True:
     else:
 
         print("Opción inválida.\n")
+        
